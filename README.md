@@ -11,7 +11,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 ## Features
 
 - A simple landing page with blog functionality built with Netlify CMS
-- Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
+- Editable Pages: Landing, About, Project, Blog-Collection and Contact page with Netlify Form support
 - Create Blog posts from Netlify CMS
 - Tags: Separate page for posts under each tag
 - Basic directory organization
@@ -48,9 +48,9 @@ $ yarn
 $ netlify dev # or ntl dev
 ```
 
-This uses the new [Netlify Dev](https://www.netlify.com/products/dev/?utm_source=blog&utm_medium=netlifycms&utm_campaign=devex) CLI feature to serve any functions you have in the `lambda` folder.
+This uses the new [Netlify Dev](https://www.netlify.com/projects/dev/?utm_source=blog&utm_medium=netlifycms&utm_campaign=devex) CLI feature to serve any functions you have in the `lambda` folder.
 
-To test the CMS locally, you'll need to run a production build of the site:
+To test the CMS locally, you'll need to run a projection build of the site:
 
 ```
 $ npm run build
@@ -68,7 +68,7 @@ import CMS from 'netlify-cms-app'
 
 import AboutPagePreview from './preview-templates/AboutPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
-import ProductPagePreview from './preview-templates/ProductPagePreview'
+import ProjectPagePreview from './preview-templates/ProjectPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 // CMS.registerMediaLibrary(uploadcare);
@@ -76,7 +76,7 @@ import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
-CMS.registerPreviewTemplate('products', ProductPagePreview)
+CMS.registerPreviewTemplate('projects', ProjectPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 ```
 
@@ -109,7 +109,7 @@ To resolve, make sure that you have both Python 2.7 and the Visual C++ build env
 
 ```
 npm config set python python2.7
-npm install --global --production windows-build-tools
+npm install --global --projection windows-build-tools
 ```
 
 [Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')
