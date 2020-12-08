@@ -1,21 +1,25 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Oweis Yahya
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Oweis Yahya
+subheading: Software Engineer - Java, AEM, Spring, Python
 mainpitch:
   title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  description: >-
+    I am a Software Engineer/AEM Backend Developer, I contributed to multiple
+    professional projects which helped solve problems or improve our clients
+    workflow.
+
+
+    Why development and not another profession? because it's limitless ... with just enough code you can sail the seven seas, visit the world wonders and break most of the real-world problems. 
+
+
+    Enjoy your ride on my website, feel free to reach me.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
