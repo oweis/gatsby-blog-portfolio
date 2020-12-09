@@ -1,7 +1,7 @@
 ---
 templateKey: 'project-page'
 path: /projects
-title: Our Coffee
+title: My Projects
 image: /img/jumbotron.jpg
 heading: Great coffee with a conscience
 description: >-
