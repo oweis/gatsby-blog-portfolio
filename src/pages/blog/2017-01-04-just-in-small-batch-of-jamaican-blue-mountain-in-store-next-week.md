@@ -1,34 +1,53 @@
 ---
-templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+templateKey: blog-post
+title: "OSGI Walkthrough "
 date: 2017-01-04T15:04:10.000Z
+description: OSGi is a modularization technique (rather than a framework). It
+  gives you the ability to separate your software in independent modules that
+  can co-exist in different versions, with and without other modules
 featuredpost: true
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+featuredimage: /img/osgi-image.png
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - AEM
+  - OSGI
+  - Java
+  - Backend
 ---
+## Open Services Gateway Initiative
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+OSGi bundles can be managed as they can be installed, started, and stopped individually and interdependencies between these modules are automatically handled. Each of the OSGi components is contained in one of the bundles.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+OSGi is used to control the composite bundles of AEM and their configuration.
 
-## A little history
+OSGi is a set of specifications that create a development model where applications are composed of different reusable components. This also means that the components can hide their implementations from other components and communicate through services. These services are objects that are shared between components.
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+To summarize, an OSGi application is a collection of bundles that interact using service interfaces. Bundles can be independently developed and deployed, and they're associated services may appear or disappear at any time.
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+## Advantages
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+* Adding an OSGi service platform to a network device enables you to manage that lifecycle of the software components in the device from anywhere in the network.
+* OSGi simplifies the process of the development and maintenance of a large number of configurations.
+* Multiple Java-based components can work efficiently within a single JVM. This technology provides an extensive security model so components can run in a shielded environment.
+* A few other advantages of note would be remote component management, secure execution environment, cooperation between applications, as well as commercial off-the-shelf components just to name a few.
 
-## What you need to know before trying
+## Architecture
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+![OSGI structure](/img/osgi-image.png)
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+
+Bundles are the OSGi components made by developers. 
+The service layer connects bundles in a dynamic way of offering a publish, find, bind model for plain old Java objects. 
+The lifecycle which has an API to install, start, stop, update, and uninstall bundles. 
+Modules are the layers that define how a bundle can import and export code. 
+Wrapped along all of this is the security layer that handles the security aspects. 
+
+![OSGI Bundles](/img/osgi-bundles-image.png)
+
+
+
+When working with OSGi, the bundles are the real meat as these are the components made by developers. Bundles are built on Java's existing standard way of packaging together classes and resources. The JAR file--an OSGi bundle is just a JAR file with additional metadata added to the manifest file. The OSGi metadata is provided as header information in the metainf/manifest. mffile. Let's take a closer look at this additional meta information. The first piece of information is the bundle name. This consists of a symbolic name used by OSGi to determine the bundle's unique identity. You can also provide an optional, human readable, more descriptive name. Also in the meta information is the bundle version. Other meta information will include a list of services that are imported and exported by the particular bundle. The manifest header file also lists optional meta information like the minimum Java version the bundle requires, vendor of the bundle, a copyright statement, contact addresses, and other information of that nature. It is important to note the bundles are loosely coupled by design. As they include package imports and exports with the different versions. Dependencies are independent from the bundle organization, and OSGi provides error management for unresolved bundles. OSGi requires a module thinking process during application design, and all of this requires proper metadata and consistent version management. In the next clip, we'll talk about OSGi's dependency management resolution.
+
+
+
+//TO BE CONTINUED
