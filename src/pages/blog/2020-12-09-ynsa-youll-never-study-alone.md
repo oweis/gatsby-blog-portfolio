@@ -4,7 +4,7 @@ title: YNSA - you'll never study alone
 date: 2020-12-09T14:34:01.189Z
 description: Accountability drive more results than motivation.
 featuredpost: true
-featuredimage: /img/ynsf-1-.png
+featuredimage: /img/ynsf-copy.png
 tags:
   - YNSA
   - OCP8
