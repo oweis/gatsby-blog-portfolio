@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Oweis Yahya - Software Engineer',
-    description:
-       'This repo follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution. build with Gatsby and Netlify CMS',
-  },
+    description: 'This repo follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution. build with Gatsby and Netlify CMS',
+    googlesiteverification: '0hnHkUeZJ78zjDB4Y8ZVydCLGGLpVRD_kn6BRb5zgAE',
+    },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
