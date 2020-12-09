@@ -2,7 +2,7 @@
 templateKey: 'project-page'
 path: /projects
 title: My Projects
-image: /img/jumbotron.jpg
+image: /img/projects-index.jpg
 heading: Great coffee with a conscience
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
