@@ -7,7 +7,6 @@ module.exports = {
     },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
     'gatsby-plugin-sitemap',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -33,6 +32,12 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        indentedSyntax: true
+      }
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
