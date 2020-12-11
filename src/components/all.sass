@@ -1,14 +1,34 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+// Ow logo main colors: #EACCB1 #534745
+$ow-red: #D56062
+$ow-red-invert: #fff
+$ow-dark-green: #074F57
+$ow-light-green: #80B1AE
+$ow-light-brown: #EACCB1
+$ow-dark-brown: #534745
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: $ow-red
+$primary-invert: $ow-red-invert
 $body-color: #333
-$black: #2b2523
+$black: $ow-dark-brown //#2b2523
+// Page main and sub title
+.ow-title, .ow-subheading
+  box-shadow: $ow-red 0.5rem 0px 0px $ow-red -0.5rem 0px 0px;
+  background-color: $ow-red;
+  color: $ow-light-brown;
+  line-height: 1;
+  padding: 0.25em;
+  text-align: center;
+
+.ow-index
+  display: flex;
+  height: 150px;
+  line-height: 1;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -57,14 +77,14 @@ $black: #2b2523
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
+    background-color: $ow-dark-green
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: $ow-light-green
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px $ow-light-green
+    box-shadow: inset 0 0 0 2px $ow-light-green
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -85,13 +105,13 @@ footer.footer
   background-color: transparent
 
 //Menu overrides
-$menu-item-color: $white-ter
+$menu-item-color: $ow-light-brown //$white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
-$menu-label-color: $white-ter
+$menu-item-active-color: $ow-red-invert
+$menu-item-active-background-color:	$ow-red-invert
+$menu-list-border-left: 1px solid $ow-red-invert
+$menu-label-color: $ow-light-brown //$white-ter
 
 
 .menu-label
@@ -114,7 +134,7 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: $ow-light-green;
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;
