@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-title: "YNSA - OCP 8 "
-description: Oracle Certified Professional Certification Guide
+title: "YNSA - OCP 8 - Advanced Class Design"
+description: Oracle Certified Professional Certification Guide - Advanced Class Design
 featuredpost: true
 featuredimage: /img/ynsa-ocp8-copy.png
 tags:
@@ -12,6 +12,7 @@ tags:
   - Java SE
   - YNSA
   - Study Guide
+  - Class Design
 ---
 
 ![YNSA OCP8](/img/ynsa-ocp8-copy.png)
