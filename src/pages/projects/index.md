@@ -56,8 +56,8 @@ certification:
     - description: Oracle Certified Associate Java Developer 8
       items:
         - Certified by Oracle
+        - Java Core Certification
         - Understand Java core concepts
-        - something else
       technology: Java
       certification_code: 'OCA 8'
       link: https://www.youracclaim.com/badges/42d89696-7fa7-4e7c-8723-32e058e02386/public_url 
@@ -67,8 +67,8 @@ certification:
     - description: Oracle Certified Professional Java Developer 8
       items:
         - Certified by Oracle
+        - Java Core Certification
         - An advanced understanding of Java core
-        - something else
       technology: Java
       certification_code: 'OCP 8'
       link: https://www.youracclaim.com/badges/42d89696-7fa7-4e7c-8723-32e058e02386/public_url
@@ -78,8 +78,8 @@ certification:
     - description: Adobe Exerience Manager Certified Developer
       items:
         - Certified by Adobe
-        - a deep understanding of Adobe experience manager
-        - Something else
+        - Adobe Experience Manager Certification
+        - A deep understanding of Adobe experience manager
       technology: AEM
       certification_code: 'AEM DEV'
       link: https://www.youracclaim.com/badges/42d89696-7fa7-4e7c-8723-32e058e02386/public_url
