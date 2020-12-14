@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
+import Certification from '../components/Certification'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const ProjectPageTemplate = ({
@@ -16,7 +16,7 @@ export const ProjectPageTemplate = ({
   main,
   testimonials,
   fullImage,
-  pricing,
+  certification,
 }) => (
   <div className="content">
     <div
@@ -84,10 +84,10 @@ export const ProjectPageTemplate = ({
                 }}
               />
               <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
+                {certification.heading}
               </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+              <p className="is-size-5">{certification.description}</p>
+              <Certification data={certification.plans} />
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@ ProjectPageTemplate.propTypes = {
   }),
   testimonials: PropTypes.array,
   fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricing: PropTypes.shape({
+  certification: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
     plans: PropTypes.array,
@@ -134,7 +134,7 @@ const ProjectPage = ({ data }) => {
         main={frontmatter.main}
         testimonials={frontmatter.testimonials}
         fullImage={frontmatter.full_image}
-        pricing={frontmatter.pricing}
+        certification={frontmatter.certification}
       />
     </Layout>
   )
@@ -223,14 +223,25 @@ export const projectPageQuery = graphql`
             }
           }
         }
-        pricing {
+        certification {
           heading
           description
           plans {
             description
             items
-            plan
-            price
+            technology
+            certification_code
+            link
+            certification_image {
+              alt
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 526, quality: 92) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
           }
         }
       }

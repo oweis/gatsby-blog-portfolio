@@ -9,8 +9,8 @@ const ProjectPagePreview = ({ entry, getAsset }) => {
   const entryTestimonials = entry.getIn(['data', 'testimonials'])
   const testimonials = entryTestimonials ? entryTestimonials.toJS() : []
 
-  const entryPricingPlans = entry.getIn(['data', 'pricing', 'plans'])
-  const pricingPlans = entryPricingPlans ? entryPricingPlans.toJS() : []
+  const entryCertificationPlans = entry.getIn(['data', 'certification', 'plans'])
+  const certificationPlans = entryCertificationPlans ? entryCertificationPlans.toJS() : []
 
   return (
     <ProjectPageTemplate
@@ -37,10 +37,10 @@ const ProjectPagePreview = ({ entry, getAsset }) => {
       }}
       fullImage={entry.getIn(['data', 'full_image'])}
       testimonials={testimonials}
-      pricing={{
-        heading: entry.getIn(['data', 'pricing', 'heading']),
-        description: entry.getIn(['data', 'pricing', 'description']),
-        plans: pricingPlans,
+      certification={{
+        heading: entry.getIn(['data', 'certification', 'heading']),
+        description: entry.getIn(['data', 'certification', 'description']),
+        plans: certificationPlans,
       }}
     />
   )
