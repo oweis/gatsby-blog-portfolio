@@ -27,7 +27,7 @@ export const ProjectPageTemplate = ({
         })`,
       }}
     >
-      <h2 className="ow-title has-text-weight-bold is-size-1" style={{color:"#EACCB1"}}>
+      <h2 className="ow-title has-text-weight-bold is-size-1" style={{color:"white"}}>
         {title}
       </h2>
     </div>

@@ -16,8 +16,7 @@ $black: $ow-dark-brown //#2b2523
 // Page main and sub title
 .ow-title, .ow-subheading
   box-shadow: $ow-red 0.5rem 0px 0px $ow-red -0.5rem 0px 0px;
-  background-color: $ow-red;
-  color: $ow-light-brown;
+  color: white;
   line-height: 1;
   padding: 0.25em;
   text-align: center;
@@ -50,6 +49,8 @@ $black: $ow-dark-brown //#2b2523
 
 // Helper Classes
 .full-width-image-container
+  background-blend-mode: luminosity
+  background-color: $ow-light-green
   width: 100vw
   height: 400px
   position: relative
@@ -63,6 +64,8 @@ $black: $ow-dark-brown //#2b2523
   align-items: center
 
 .full-width-image
+    background-blend-mode: luminosity
+    background-color: $ow-light-green
     width: 100vw
     height: 400px
     background-size: cover
