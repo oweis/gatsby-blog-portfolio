@@ -83,11 +83,6 @@ export const ProjectPageTemplate = ({
                   })`,
                 }}
               />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {certification.heading}
-              </h2>
-              <p className="is-size-5">{certification.description}</p>
-              <Certification data={certification.plans} />
             </div>
           </div>
         </div>
@@ -134,7 +129,6 @@ const ProjectPage = ({ data }) => {
         main={frontmatter.main}
         testimonials={frontmatter.testimonials}
         fullImage={frontmatter.full_image}
-        certification={frontmatter.certification}
       />
     </Layout>
   )
@@ -144,6 +138,7 @@ ProjectPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
+      
     }),
   }),
 }
@@ -220,27 +215,6 @@ export const projectPageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        certification {
-          heading
-          description
-          plans {
-            description
-            items
-            technology
-            certification_code
-            link
-            certification_image {
-              alt
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 526, quality: 92) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
             }
           }
         }

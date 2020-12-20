@@ -9,8 +9,6 @@ const ProjectPagePreview = ({ entry, getAsset }) => {
   const entryTestimonials = entry.getIn(['data', 'testimonials'])
   const testimonials = entryTestimonials ? entryTestimonials.toJS() : []
 
-  const entryCertificationPlans = entry.getIn(['data', 'certification', 'plans'])
-  const certificationPlans = entryCertificationPlans ? entryCertificationPlans.toJS() : []
 
   return (
     <ProjectPageTemplate
@@ -37,11 +35,6 @@ const ProjectPagePreview = ({ entry, getAsset }) => {
       }}
       fullImage={entry.getIn(['data', 'full_image'])}
       testimonials={testimonials}
-      certification={{
-        heading: entry.getIn(['data', 'certification', 'heading']),
-        description: entry.getIn(['data', 'certification', 'description']),
-        plans: certificationPlans,
-      }}
     />
   )
 }
