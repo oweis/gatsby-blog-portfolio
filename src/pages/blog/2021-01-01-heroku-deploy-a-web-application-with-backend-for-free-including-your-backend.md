@@ -24,28 +24,30 @@ Deploying your first application can be a mystery, but what if we can do this so
 
 Let get straight to the point, step by step:
 
-The first thing to do is to create your Heroku account: <https://www.heroku.com/>
+The first thing to do is to create your Heroku account, so head to [heroku.com](https://www.heroku.com/) and create you account.
 
-Open your dashboard, click ‘New’, and choose ‘create new app’:
+Then, open your dashboard, click **New**, and choose **Create new app**’:
 
 ![](https://cdn-images-1.medium.com/max/800/1*vxswjDuunTmVnMqVE7YNPw.png)
 
-Choose an available app name and the convenient region, in my case Europe:
+Choose an available **App** **name** and a **Region**, in my case Europe, is the best option:
 
 ![](https://cdn-images-1.medium.com/max/800/1*5DnpzlcWh6XcjPgjJ9QOqw.png)
 
-You will have multiple deployment methods, let use Github, I created a simple TODO app, using Spring and Thymeleaf (you can use whatever technology you want).
+You will have multiple deployment methods, let use Github, I created a pushed simple TODO app, using Spring and Thymeleaf (you can use whatever technology you want).
 
-Choose Github, search for your repository, and click “Connect”
+Choose **Github**, search for your repository, and click **Connect**:
 
 ![](https://cdn-images-1.medium.com/max/800/1*33co9Yd3Rvq9PWrDw_gVNg.png)
 
-Click Deploy Branch,
+By default, main is the branch used for deloyement, but you can deploy any branch, just select it and click **Deploy Branch**:
 
 ![](https://cdn-images-1.medium.com/max/800/1*dKJXqXbO3ODpbg7PCApbNQ.png)
 
-If there is no issue, go to \[APP_NAME].herokuapp.com, and you will find your application UP and RUNNING.
+If there is no issue, go to \[YOUR_APP_NAME].herokuapp.com, and you will find your application ***UP*** and ***RUNNING***.
 
 Check the TODO app we deployed in this application here: <https://heroku-oweis-app.herokuapp.com/>
+
+
 
 <!--EndFragment-->
