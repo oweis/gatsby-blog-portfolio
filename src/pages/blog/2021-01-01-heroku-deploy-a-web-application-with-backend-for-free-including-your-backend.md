@@ -11,15 +11,10 @@ tags: []
 ---
 <!--StartFragment-->
 
-### Deploy your application TODAY for free
+![Heroku banner](https://cdn-images-1.medium.com/max/2560/1*FSkUtK8pYPBSNeaVotU4Ug.png "Heroku: our deployment savior")
 
-> *For the sake of your portfolio or to share your with your team … Heroku will help you*
-
-![](https://cdn-images-1.medium.com/max/2560/1*FSkUtK8pYPBSNeaVotU4Ug.png)
-
-Heroku: our deployment savior
-
-Deploy your first application can be a mystery, but what if we can do this so easily that we move from DEV to PROD quickly.
+\
+Deploying your first application can be a mystery, but what if we can do this so easily that we move from **DEV** to **PROD**  quickly.
 
 Let get straight to the point, step by step:
 
