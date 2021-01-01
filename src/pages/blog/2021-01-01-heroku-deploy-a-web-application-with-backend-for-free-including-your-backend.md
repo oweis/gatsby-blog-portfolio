@@ -6,7 +6,7 @@ date: 2021-01-01T02:34:21.569Z
 description: For the sake of your portfolio or to share your with your team …
   Heroku will help you
 featuredpost: true
-featuredimage: /img/download.jfif
+featuredimage: /img/herokulogo.jpg
 tags:
   - Deploy
   - Heroku
