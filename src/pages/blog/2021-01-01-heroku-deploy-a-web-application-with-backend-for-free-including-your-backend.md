@@ -7,7 +7,13 @@ description: For the sake of your portfolio or to share your with your team …
   Heroku will help you
 featuredpost: true
 featuredimage: /img/download.jfif
-tags: []
+tags:
+  - Deploy
+  - Heroku
+  - TODO
+  - Spring
+  - thymeleaf
+  - deployement
 ---
 <!--StartFragment-->
 
